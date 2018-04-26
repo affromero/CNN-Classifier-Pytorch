@@ -21,5 +21,8 @@ kwargs:
 - *model* [default='densenet201']
 - *TEST* [default=False]
 
+### Example:
+`./main.py --batch_size=16 --model=resnet152`
+
 ### Misc
 It trains using pretrained weights from Imagenet. 
