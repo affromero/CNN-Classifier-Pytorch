@@ -10,16 +10,16 @@ The whole code is written in:
 - The whole code will assume you have your dataset in `./data` with subfolders: `train`, `val`, and `test`. If you need to change this, just modify `data_loader.py`.
 
 ## Usage:
-`./main.py -args`
+`./main.py --kwargs`
 
-args:
-- batch_size [default=128]
-- num_epochs [default=59]
-- num_epochs_decay [default=60]
-- stop_training [default=3]
-- num_workers [default=4] 
-- model [default='densenet201']
-- TEST [default=False]
+kwargs:
+- *batch_size* [default=128]
+- *num_epochs* [default=59]
+- *num_epochs_decay* [default=60]
+- *stop_training* [default=3]
+- *num_workers* [default=4] 
+- *model* [default='densenet201']
+- *TEST* [default=False]
 
 ### Misc
 It trains using pretrained weights from Imagenet. 
