@@ -1,4 +1,4 @@
-#!/usr/local/bin/ipython
+#!/usr/local/bin/python
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
