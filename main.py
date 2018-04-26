@@ -124,6 +124,8 @@ if __name__=='__main__':
   parser.add_argument('--TEST', action='store_true', default=False)
   config = parser.parse_args()
 
+  config.model = config.model.lower()
+
   train_loader, val_loader, test_loader = get_data(config)
   #Train, Val, Test loaders that are foun in './data'
 
