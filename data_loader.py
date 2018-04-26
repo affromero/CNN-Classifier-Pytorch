@@ -13,17 +13,17 @@ def get_data(config):
 										  transforms.ToTensor(), \
 										  normalize])
 
-	data_train = datasets.ImageFolder('data/train_128', transform=transform_train)
+	data_train = datasets.ImageFolder('data/train', transform=transform_train)
 	train_loader = torch.utils.data.DataLoader(data_train, batch_size=config.batch_size, \
 																												 shuffle=True, \
 																												 num_workers=config.num_workers)
 
-	data_val = datasets.ImageFolder('data/val_128', transform=transform_test)
+	data_val = datasets.ImageFolder('data/val', transform=transform_test)
 	val_loader = torch.utils.data.DataLoader(data_val, batch_size=config.batch_size, \
 																										 shuffle=False, \
 																										 num_workers=config.num_workers)
 
-	data_test = datasets.ImageFolder('data/test_128', transform=transform_test)
+	data_test = datasets.ImageFolder('data/test', transform=transform_test)
 	test_loader = torch.utils.data.DataLoader(data_test, batch_size=config.batch_size, \
 																											 shuffle=False, \
 																											 num_workers=config.num_workers)
