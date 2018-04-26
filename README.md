@@ -7,10 +7,10 @@ The whole code is written in:
 ## Requirements:
 - Package requirements are the same for pytorch.
 - Works either on python 2 or 3.
-- The whole code will assume you have your dataset in ´./data´ with subfolders: ´train´, ´val´, and ´test´. If you need to change this, just modify ´data_loader.py´.
+- The whole code will assume you have your dataset in `./data` with subfolders: `train`, `val`, and `test`. If you need to change this, just modify `data_loader.py`.
 
 ## Usage:
-./main.py -args
+`./main.py -args`
 
 args:
 - batch_size [default=128]
